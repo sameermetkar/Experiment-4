@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+    <title>User Registeration Page</title>
+</head>
+<body>
+    
+<section class="section-one">
+
+    <div class="one-data">
+        <form>
+            <label for="username"> Username </label><br>
+            <input type="text" class="form-input" id="user" autocomplete="nofill"><br>
+
+            <label for="password"> Password </label><br>
+            <input type="password" class="form-input" id="pssd" autocomplete="new-password" required><br>
+            
+            <label for="email"> E-mail </label><br>
+            <input type="email" class="form-input" id="mail"><br>
+            
+            <label for="birthdate"> Date of Birth (dd/mm/yyyy) </label><br>
+            <input type="text" class="form-input" id="dob"><br>            
+            
+            <label for="city">Choose a City:</label>
+                <select name="city:" id="city">
+                    <option value="Select">Select</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Kolkata">Kolkata</option>
+                    <option value="Delhi">Delhi</option>
+                </select>
+            
+            <br><br><label for="p-lang"> Programming Languages </label><br>
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" name="cbs" value="C">
+                <label class="form-check-label" for="C">C</label>
+            </div>
+
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" name="cbs" value="C++">
+                <label class="form-check-label" for="C++">C++</label>
+            </div>
+
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" name="cbs" value="Java">
+                <label class="form-check-label" for="Java">Java</label>
+            </div>
+
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" name="cbs" value="Javascript">
+                <label class="form-check-label" for="Javascript">Javascript</label>
+            </div>
+
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" name="cbs" value="Python">
+                <label class="form-check-label" for="Python">Python</label>
+            </div>
+            
+            <input type="submit" id ="submitbtn" value="Register" class="contact-btn">
+        </form>
+    </div>
+
+    <div id="validation-box">
+       <h4>Registration Requirements</h4>
+       <p id ="usr" class="invalid">Username length should be Max 20 characters</p>
+       <p id ="checkmail" class="invalid">Email Address Valid</p>
+       <p id ="checkdob" class="invalid">Your Age is 18</p>
+       <p id ="len" class="invalid">Password should have minimun length of 8 characters</p>
+       <p id ="upper" class="invalid">Atleast one UpperCase Letter</p>
+       <p id ="lower" class="invalid">Atleast one LowerCase Letter</p>
+       <p id ="spchar" class="invalid">Atleast one Special Character</p>
+    </div>
+
+</section>
+
+ <script src="data.js"></script>
+</body>
+</html>
