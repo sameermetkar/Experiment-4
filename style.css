@@ -105,9 +105,8 @@ form label {
     position:relative;
     left: -8px;
     top:3px;
-    /* width: 10px;  
-    height: 10px; */
-    content: url(Image/tick.jpg);
+    
+    content: url(tick.jpg);
 } 
 
 .invalid{
@@ -118,7 +117,6 @@ form label {
     position:relative;
     left: -8px;
     top:3px;
-    /* width: 10px;  
-    height: 10px;  */
-    content: url(Image/wrong.png);
+   
+    content: url(wrong.png);
 }
